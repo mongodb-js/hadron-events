@@ -31,7 +31,7 @@ ipc.on(WindowEvent.SHOW_ABOUT_DIALOG, showAboutDialog);
 
 ## Events
 
-- `AppEvent.CHECKING_FOR_UPDATE`: AppEvent.ication is currently checking if update is available.
+- `AppEvent.CHECKING_FOR_UPDATE`: Application is currently checking if update is available.
 - `AppEvent.CHECK_FOR_UPDATE`: Tell the application to check for an update.
 - `AppEvent.UPDATE_NOT_AVAILABLE`: No update available for application.
 - `AppEvent.UPDATE_AVAILABLE`: Update available for application.
@@ -43,8 +43,8 @@ ipc.on(WindowEvent.SHOW_ABOUT_DIALOG, showAboutDialog);
 - `AppEvent.SHOW_CONNECT_WINDOW`: Show application connect window.
 - `AppEvent.SHOW_HELP_WINDOW`: Show application help window.
 - `AppEvent.SHOW_HELP_ENTRY`: Show application help entry.
-- `AppEvent.RENDERER_READY`: AppEvent.ication renderer process ready.
-- `AppEvent.LAUNCHED`: AppEvent.ication launched.
+- `AppEvent.RENDERER_READY`: Application renderer process ready.
+- `AppEvent.LAUNCHED`: Application launched.
 - `AppEvent.QUIT`: Quit the application.
 - `WindowEvent.SHOW_ABOUT_DIALOG`: Show the about dialog.
 - `WindowEvent.SHOW_COMPASS_TOUR`: Show the Compass tour modal.
@@ -55,6 +55,11 @@ ipc.on(WindowEvent.SHOW_ABOUT_DIALOG, showAboutDialog);
 - `WindowEvent.HIDE_SHARE_SUBMENU`: Hide share sub-menu.
 - `WindowEvent.SHARE_SCHEMA_JSON`: Share the schema as JSON.
 - `WindowEvent.RENDERER_READY`: The renderer process is ready.
+- `ElectronEvent.ALL_WINDOWS_CLOSED`: All windows are closed.
+- `ElectronEvent.READY`: Application is ready.
+- `ElectronEvent.BEFORE_QUIT`: Application is about to quit.
+- `ElectronEvent.WILL_QUIT`: Before the application starts the quit process.
+- `ElectronEvent.QUIT`: Application is quitting.
 
 ## Installation
 
