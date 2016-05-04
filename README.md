@@ -1,6 +1,40 @@
 # hadron-events [![][travis_img]][travis_url] [![][npm_img]][npm_url]
 
-> Hadron Events
+Hadron Events
+-------------
+
+Event constants used by hadron applications.
+
+## Usage
+
+Application Events
+------------------
+
+```javascript
+const App = require('hadron-events').App;
+const ipc = require('hadron-ipc');
+
+ipc.broadcast(App.CHECKING_FOR_UPDATE);
+
+```
+
+## Events
+
+- `App.CHECKING_FOR_UPDATE`: Application is currently checking if update is available.
+- `App.CHECK_FOR_UPDATE`: Tell the application to check for an update.
+- `App.UPDATE_NOT_AVAILABLE`: No update available for application.
+- `App.UPDATE_AVAILABLE`: Update available for application.
+- `App.UPDATE_DOWNLOADED`: Update completed downloading new version.
+- `App.INSTALL_UPDATE`: Install the new update.
+- `App.ENABLE_AUTO_UPDATE`: Enable application auto updates.
+- `App.DISABLE_AUTO_UPDATE`: Disable application auto updates.
+- `App.CLOSE_CONNECT_WINDOW`: Close application connect window.
+- `App.SHOW_CONNECT_WINDOW`: Show application connect window.
+- `App.SHOW_HELP_WINDOW`: Show application help window.
+- `App.SHOW_HELP_ENTRY`: Show application help entry.
+- `App.RENDERER_READY`: Application renderer process ready.
+- `App.LAUNCHED`: Application launched.
+- `App.QUIT`: Quit the application.
 
 ## Installation
 
