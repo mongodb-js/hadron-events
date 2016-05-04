@@ -16,6 +16,17 @@ const ipc = require('hadron-ipc');
 
 ipc.broadcast(App.CHECKING_FOR_UPDATE);
 
+ipc.respondTo(App.CHECKING_FOR_UPDATE, checkForUpdate);
+```
+
+Window Events
+-------------
+
+```javascript
+const App = require('hadron-events').App;
+const ipc = require('hadron-ipc');
+
+ipc.on(Window.SHOW_ABOUT_DIALOG, showAboutDialog);
 ```
 
 ## Events
