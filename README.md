@@ -35,7 +35,6 @@ ipc.broadcast(App.CHECKING_FOR_UPDATE);
 - `App.RENDERER_READY`: Application renderer process ready.
 - `App.LAUNCHED`: Application launched.
 - `App.QUIT`: Quit the application.
-
 - `Window.SHOW_ABOUT_DIALOG`: Show the about dialog.
 - `Window.SHOW_COMPASS_TOUR`: Show the Compass tour modal.
 - `Window.SHOW_COMPASS_OVERVIEW_SUBMENU`: Show the Compass overview sub-menu.
