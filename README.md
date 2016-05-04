@@ -36,6 +36,15 @@ ipc.broadcast(App.CHECKING_FOR_UPDATE);
 - `App.LAUNCHED`: Application launched.
 - `App.QUIT`: Quit the application.
 
+- `Window.SHOW_ABOUT_DIALOG`: Show the about dialog.
+- `Window.SHOW_COMPASS_TOUR`: Show the Compass tour modal.
+- `Window.SHOW_COMPASS_OVERVIEW_SUBMENU`: Show the Compass overview sub-menu.
+- `Window.SHOW_NETWORK_OPTIN`: Show network optin.
+- `Window.SHOW_INTERCOM_PANEL`: Show intercom panel.
+- `Window.SHOW_SHARE_SUBMENU`: Show share sub-menu.
+- `Window.HIDE_SHARE_SUBMENU`: Hide share sub-menu.
+- `Window.SHARE_SCHEMA_JSON`: Share the schema as JSON.
+
 ## Installation
 
 ```
