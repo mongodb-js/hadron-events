@@ -11,49 +11,50 @@ Application Events
 ------------------
 
 ```javascript
-const App = require('hadron-events').App;
+const AppEvent = require('hadron-events').AppEvent;
 const ipc = require('hadron-ipc');
 
-ipc.broadcast(App.CHECKING_FOR_UPDATE);
+ipc.broadcast(AppEvent.CHECKING_FOR_UPDATE);
 
-ipc.respondTo(App.CHECKING_FOR_UPDATE, checkForUpdate);
+ipc.respondTo(AppEvent.CHECKING_FOR_UPDATE, checkForUpdate);
 ```
 
 Window Events
 -------------
 
 ```javascript
-const App = require('hadron-events').App;
+const WindowEvent = require('hadron-events').WindowEvent;
 const ipc = require('hadron-ipc');
 
-ipc.on(Window.SHOW_ABOUT_DIALOG, showAboutDialog);
+ipc.on(WindowEvent.SHOW_ABOUT_DIALOG, showAboutDialog);
 ```
 
 ## Events
 
-- `App.CHECKING_FOR_UPDATE`: Application is currently checking if update is available.
-- `App.CHECK_FOR_UPDATE`: Tell the application to check for an update.
-- `App.UPDATE_NOT_AVAILABLE`: No update available for application.
-- `App.UPDATE_AVAILABLE`: Update available for application.
-- `App.UPDATE_DOWNLOADED`: Update completed downloading new version.
-- `App.INSTALL_UPDATE`: Install the new update.
-- `App.ENABLE_AUTO_UPDATE`: Enable application auto updates.
-- `App.DISABLE_AUTO_UPDATE`: Disable application auto updates.
-- `App.CLOSE_CONNECT_WINDOW`: Close application connect window.
-- `App.SHOW_CONNECT_WINDOW`: Show application connect window.
-- `App.SHOW_HELP_WINDOW`: Show application help window.
-- `App.SHOW_HELP_ENTRY`: Show application help entry.
-- `App.RENDERER_READY`: Application renderer process ready.
-- `App.LAUNCHED`: Application launched.
-- `App.QUIT`: Quit the application.
-- `Window.SHOW_ABOUT_DIALOG`: Show the about dialog.
-- `Window.SHOW_COMPASS_TOUR`: Show the Compass tour modal.
-- `Window.SHOW_COMPASS_OVERVIEW_SUBMENU`: Show the Compass overview sub-menu.
-- `Window.SHOW_NETWORK_OPTIN`: Show network optin.
-- `Window.SHOW_INTERCOM_PANEL`: Show intercom panel.
-- `Window.SHOW_SHARE_SUBMENU`: Show share sub-menu.
-- `Window.HIDE_SHARE_SUBMENU`: Hide share sub-menu.
-- `Window.SHARE_SCHEMA_JSON`: Share the schema as JSON.
+- `AppEvent.CHECKING_FOR_UPDATE`: AppEvent.ication is currently checking if update is available.
+- `AppEvent.CHECK_FOR_UPDATE`: Tell the application to check for an update.
+- `AppEvent.UPDATE_NOT_AVAILABLE`: No update available for application.
+- `AppEvent.UPDATE_AVAILABLE`: Update available for application.
+- `AppEvent.UPDATE_DOWNLOADED`: Update completed downloading new version.
+- `AppEvent.INSTALL_UPDATE`: Install the new update.
+- `AppEvent.ENABLE_AUTO_UPDATE`: Enable application auto updates.
+- `AppEvent.DISABLE_AUTO_UPDATE`: Disable application auto updates.
+- `AppEvent.CLOSE_CONNECT_WINDOW`: Close application connect window.
+- `AppEvent.SHOW_CONNECT_WINDOW`: Show application connect window.
+- `AppEvent.SHOW_HELP_WINDOW`: Show application help window.
+- `AppEvent.SHOW_HELP_ENTRY`: Show application help entry.
+- `AppEvent.RENDERER_READY`: AppEvent.ication renderer process ready.
+- `AppEvent.LAUNCHED`: AppEvent.ication launched.
+- `AppEvent.QUIT`: Quit the application.
+- `WindowEvent.SHOW_ABOUT_DIALOG`: Show the about dialog.
+- `WindowEvent.SHOW_COMPASS_TOUR`: Show the Compass tour modal.
+- `WindowEvent.SHOW_COMPASS_OVERVIEW_SUBMENU`: Show the Compass overview sub-menu.
+- `WindowEvent.SHOW_NETWORK_OPTIN`: Show network optin.
+- `WindowEvent.SHOW_INTERCOM_PANEL`: Show intercom panel.
+- `WindowEvent.SHOW_SHARE_SUBMENU`: Show share sub-menu.
+- `WindowEvent.HIDE_SHARE_SUBMENU`: Hide share sub-menu.
+- `WindowEvent.SHARE_SCHEMA_JSON`: Share the schema as JSON.
+- `WindowEvent.RENDERER_READY`: The renderer process is ready.
 
 ## Installation
 
